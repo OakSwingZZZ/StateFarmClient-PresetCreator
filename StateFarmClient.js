@@ -2762,7 +2762,7 @@ z-index: 999999;
                     startTime: startTime,
                     timecode: Date.now(),
                     status: ((isBanned && "banned") ||
-                        (unsafeWindow.extern.inGame && ((ss.MYPLAYER[H.playing] ? "playing " : (unsafeWindow.vueApp.game.respawnTime + "s cooldown ")) + GAMECODE + autoLeave + " (" + findKeyByValue(unsafeWindow.extern.GameType, unsafeWindow.vueApp.game.gameType) + ", " + unsafeWindow.vueData.currentRegionId + ", " + unsafeWindow.vueApp.game.mapName + ", team" + unsafeWindow.vueApp.game.team + ")")) ||
+                        (unsafeWindow.extern.inGame && ((ss.MYPLAYER[H.playing] ? "playing " : (unsafeWindow.vueApp.game.respawnTime + "s cooldown ")) + GAMECODE + autoLeave + " (" + findKeyByValue(unsafeWindow.extern.GameType, unsafeWindow.vueApp.game.gameType) + ", " + unsafeWindow.vueData.currentRegionId + ", " + unsafeWindow.vueApp.game.mapName + ", team" + unsafeWindow.vueApp.game.team +", kills "+unsafeWindow.vueData.kills+ ")")) ||
                         (errorString || "idle")),
                 };
 
